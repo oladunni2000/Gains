@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AISHAH FORMS ASSIGNMNET</title>
+        <style>
+            h1{
+                text-align: center;
+                color: blue;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid orange;
+                margin: 50px;
+            }
+            #legendone, #legendtwo{
+                text-align: center;
+                color: red;
+            }
+            fieldset{
+                background-color: palegoldenrod;
+                margin-left: 30px;
+                margin-right: 150px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Course Sign Up Page</h1>
+        <p>Please Note: First Name, Last Name,Password and Email are required</p>
+        <form>
+            <fieldset>
+                <legend id="legendone">Personal Details</legend>
+                <label for="fname">First name:</label> <input type="text" placeholder="First name" id="fname"> 
+                <label for="lname">Last name:</label> <input type="text" placeholder="Last name" id="lname">
+                <br>
+                <br>
+                <label for="email">Email:</label> <input  placeholder="name@email.com" type="email" id="email">
+                <label for="pword">Password:</label> <input type="text">
+                <p>Are you over the age of 18?</p>
+                <input id="yes" type="radio" name="yesorno"><label for="yes">Yes</label>
+                <input id="no" type="radio" name="yesorno"> <label for="no">No</label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend id="legendtwo">Payment Details</legend>
+                <p for="paymentmethod">Do you have a Credit card or PayPal?</p>
+                <select name="paymentmethod" id="paymentmethod">
+                    <option value="Creditcard">Credit Card</option>
+                    <option value="PayPal">PayPal</option>
+                </select>
+            </fieldset>
+            <br>
+            <p>How did we do?</p>
+            <input type="checkbox" name="rating" id="excellent"> <label for="excellent" style="color:green ;">Excellent</label>
+            <input type="checkbox" name="rating" id="good"> <label for="good" style="color: yellow;">Good</label>
+            <input type="checkbox" name="rating" id="neutral"> <label for="neutral" style="color: blue;">Neutral</label>
+            <input type="checkbox" name="rating" id="bad"><label for="bad">Bad</label>
+            <input type="checkbox" name="rating" id="poor"><label for="poor" style="color: red;">Poor</label>
+        </form>
+    </body>
+</html>
